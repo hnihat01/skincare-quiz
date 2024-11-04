@@ -3,7 +3,7 @@
 .results-background {
     position: absolute;
     width: 100%;
-    height: 539px;
+    height: 72%;
     left: 0;
     top: 0;
     background: url('../images/result-page-background.png') no-repeat center center;
@@ -14,7 +14,7 @@
 .results-overlay {
     position: absolute;
     width: 100%;
-    height: 539px;
+    height: 72%;
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.35);
@@ -22,14 +22,10 @@
 }
 
 .text-container {
-    position: absolute;
-    width: 589px;
-    height: 88px;
-    left: 30%;
-    top: 17%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative; /* Change to relative to allow positioning for absolute children */
+    width: 100%;
+    max-width: 100%;
+    margin: 8% auto; /* Center the text container */
     z-index: 2; /* Ensures text is above the overlay */
 }
 
@@ -39,7 +35,7 @@
     font-size: 40px;
     text-align: center;
     color: #FFFFFF;
-    margin: -6% 3% 0% 2%; /* Set margin to 0 to remove extra space */
+    margin: -3% 2% 0% 2%; /* Set margin to 0 to remove extra space */
 }
 
 .second-text {
@@ -49,7 +45,7 @@
     text-align: center;
     color: rgba(255, 255, 255, 1);
     line-height: 24px;
-    margin: 4% 3% 2% 6%; /* Set margin to 0 to remove extra space */
+    margin: 1% 5% -3% 6%; /* Set margin to 0 to remove extra space */
 }
 
 .button-style {
@@ -68,11 +64,43 @@
     font-weight: 500;
     text-align: center;
     cursor: pointer; /* Change cursor to pointer on hover */
-    margin: 5% 3% 2% 5%; /* Set margin to 0 to remove extra space */
+    margin: 5% 0% 0% 40%; /* Set margin to 0 to remove extra space */
+}
+.card-container {
+    position: absolute; /* Use absolute positioning for overlap */
+    top: 55%; /* Position below the text container (adjust as needed) */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center adjustment */
+    width: 100%; /* Full width */
+    z-index: 1; /* Ensures CardSlider is above the overlay */
 }
 
-.card-container {
-    margin: 30% 3% 2% 5%;
-    position: relative; /* Ensures positioning of CardSlider above overlay */
-    z-index: 1; /* Ensures CardSlider is above the overlay */
+/* Responsive Styles */
+@media (max-width: 628px) {
+   
+    .text-container {
+        top: 20%; /* Adjust position */
+        width: 90%; /* Allow more width on smaller screens */
+        z-index: 2; /* Keep text above the overlay */
+    }
+
+    .card-container {
+        top: 80%; /* Position the card slider over the text */
+        transform: translate(-50%, -50%); /* Center it vertically and horizontally */
+        margin: 0; /* Remove any margin */
+    }
+
+    .first-text {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .second-text {
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
+    }
+
+    .button-style {
+        margin-left: 30%;
+        margin-top: 15%;
+        width: 40%; /* Use full width on small screens */
+    }
 }

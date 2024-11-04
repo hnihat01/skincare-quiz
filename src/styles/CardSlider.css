@@ -2,6 +2,7 @@
 
 /* Card Styles */
 .card {
+    position: relative; /* Make card container a positioned element */
     height: 500px; /* Fixed height for card */
     width: 350px; /* Fixed width for card */
     margin: 10px; /* Margin around the card */
@@ -115,18 +116,41 @@
 }
 
 
+/* Card Styles */
 .card {
-    position: relative; /* Make sure the card is positioned relative for absolute positioning of the icon */
-    /* Add other styles for your card */
+    height: 500px; /* Fixed height for card */
+    width: 350px; /* Fixed width for card */
+    margin: 10px; /* Margin around the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid white; /* Optional: border for visibility */
+    border-radius: 8px; /* Optional: rounded corners */
+    overflow: hidden; /* Clip content if it overflows */
+    cursor: pointer; /* Change cursor on hover */
+    background-color: white;
 }
 
+/* Media Query for Small Screens */
+@media (max-width: 568px) {
+    .card {
+        width: 90%; /* Take a larger width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
 .favorite-icon {
-    position: absolute; /* Position the icon absolutely */
-    top: 10px; /* Adjust as needed for your design */
-    right: 10px; /* Adjust as needed for your design */
-    cursor: pointer; /* Change cursor to pointer for interactivity */
-    color: rgba(28, 38, 53, 1); /* Default color for the favorite icon */
-    transition: color 0.3s ease; /* Smooth transition for hover effects */
+    position: absolute;
+    top: 10px; /* Adjust as needed to position inside the card */
+    right: 10px; /* Adjust as needed to position inside the card */
+    cursor: pointer;
+    color: rgba(28, 38, 53, 1);
+    transition: color 0.3s ease;
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.favorite-icon .favorite {
+    color:rgba(28, 38, 53, 1); /* Color for the filled favorite icon */
 }
 
 

@@ -5,10 +5,24 @@ import Card from './Card';
 const CardSlider = () => {
     const [slides, setSlides] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const cardsToShow = 3; // Number of cards to show at a time
     const [favorites, setFavorites] = useState(new Set()); // Set to keep track of favorite card indices
+    const [cardsToShow, setCardsToShow] = useState(3); // Default to 3 cards
 
     useEffect(() => {
+        const updateCardsToShow = () => {
+            if (window.innerWidth < 768) { // Example breakpoint for small screens
+                setCardsToShow(1);
+            } else {
+                setCardsToShow(3);
+            }
+        };
+
+        // Initial update
+        updateCardsToShow();
+
+        // Update on resize
+        window.addEventListener('resize', updateCardsToShow);
+        
         // Fetch product data from the API
         fetch('https://jeval.com.au/collections/hair-care/products.json?page=1')
             .then(response => response.json())
@@ -24,6 +38,8 @@ const CardSlider = () => {
                 setSlides(fetchedSlides);
             })
             .catch(error => console.error("Error fetching products:", error));
+            return () => window.removeEventListener('resize', updateCardsToShow); // Cleanup listener
+
     }, []);
 
     // Click handler for the cards
