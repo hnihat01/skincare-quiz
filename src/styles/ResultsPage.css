@@ -81,12 +81,12 @@
         top: 20%; /* Adjust position */
         width: 100%; /* Allow more width on smaller screens */
         z-index: 2; /* Keep text above the overlay */
-        margin: 0 auto; /* Center the text container */
+        margin: 2 auto; /* Center the text container */
         text-align: center; /* Center text for better appearance */
     }
 
     .card-container {
-        top: 80%; /* Position the card slider over the text */
+        top: 55%; /* Position the card slider over the text */
         transform: translateX(-50%); /* Center horizontally */
         margin: 0; /* Remove any margin */
         left: 50%; /* Center horizontally */
@@ -94,18 +94,18 @@
     }
 
     .first-text {
-        font-size: 1.5rem; /* Adjust font size for better readability */
+        font-size: 1.8rem; /* Adjust font size for better readability */
     }
 
     .second-text {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-        line-height: 1.5; /* Improve readability */
+        font-size:.9rem; /* Adjust font size for smaller screens */
+        line-height: 1.4; /* Improve readability */
     }
 
     .button-style {
         margin-left: auto; /* Center button horizontally */
         margin-right: auto; /* Center button horizontally */
-        margin-top: 15%; /* Space above the button */
-        width: 80%; /* Use a larger percentage of the width on small screens */
+        margin-top:10%; /* Space above the button */
+        width: 50%; /* Use a larger percentage of the width on small screens */
     }
 }
