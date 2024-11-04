@@ -1,25 +1,25 @@
 /* QuizPage.css */
 
 .container {
-    width: 90%;
+    width: 40%;
     height: 30%;
     opacity: 1;
-    margin: 25% 25%;
+    margin: 15% 25%;
 }
 
 .text-container {
-    width: 100%;
+    width: 90%;
     opacity: 1;
 }
 
 .question {
-    width: 90%;
+    width: 85%;
     font-family: 'Grange-Light';
     font-weight: 100;
     font-size: 44px;
     text-align: center;
     color: #1C2635;
-    margin: 15% 5% 2%;
+    margin: 15% 5% 2% 10%;
 }
 
 .answer-container {
@@ -53,7 +53,7 @@
 .button-container {
     display: flex;
     justify-content: space-between;
-    margin: 2% 15% 2% 16%;
+    margin: 2% 15% 2% 40%;
     width: 30%;
 }
 
@@ -85,4 +85,49 @@
 
 .progress-container {
     margin: -40% -40% 0% 100% ;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Full width for smaller screens */
+        margin: 30% auto; /* Center margin */
+    }
+
+    .question {
+        font-size: 22px; /* Smaller font size for mobile */
+        margin: 10% 0; /* Adjust top margin */
+    }
+
+    .answer-container {
+        flex-direction: column; /* Stack answers vertically */
+        align-items: center; /* Center answers */
+        margin: 10px 0; /* Adjust margins */
+    }
+
+    .answer-style {
+        width: 100%; /* Full width for buttons on mobile */
+        font-size: 12px; /* Smaller font size */
+        padding: 8px; /* Adjust padding */
+        margin: 5px 0; /* Add vertical margin between buttons */
+    }
+
+    .next-button,
+    .back-button {
+        font-size: 14px; /* Smaller font size for buttons */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .button-container {
+        width: 60%; 
+        margin-left: 20%;
+    }
+    .progress-container {
+        margin: 10% 20% 30% 20% ;
+        height: 100%; /* Full height of the container */
+        width: 50%; /* Set the width to represent the progress */
+        border-radius: 4px; /* Match the corners */
+        transition: width 0.3s ease; /* Smooth transition for progress change */
+    
+     
+     
+    }
 }
