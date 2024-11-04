@@ -1,0 +1,88 @@
+/* QuizPage.css */
+
+.container {
+    width: 90%;
+    height: 30%;
+    opacity: 1;
+    margin: 25% 25%;
+}
+
+.text-container {
+    width: 100%;
+    opacity: 1;
+}
+
+.question {
+    width: 90%;
+    font-family: 'Grange-Light';
+    font-weight: 100;
+    font-size: 44px;
+    text-align: center;
+    color: #1C2635;
+    margin: 15% 5% 2%;
+}
+
+.answer-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start; /* Align answers to the left */
+    margin: 20px 0px 10px 40px;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 5px; /* Space between individual answers */
+}
+
+.answer-style {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 16px;
+    text-align: left;
+    padding: 10px 5px;
+    border-radius: 8px;
+    border: 1px solid #5BC1ED;
+    cursor: pointer;
+    color: #1C2635;
+    flex: 1 1 auto; /* Allow items to stretch and fill space */
+    min-width: 2px; /* Set a minimum width for the buttons */
+    max-width: calc(50% - 10px); /* Ensure buttons don't grow too large */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 15% 2% 16%;
+    width: 30%;
+}
+
+.next-button {
+    padding: 10px 20px 10px 10px;
+    border-radius: 8px;
+    border: 1px solid #C3EDFF;
+    background-color: #C3EDFF;
+    cursor: pointer;
+    color: #1C2635;
+    font-size: 16px;
+    flex: 1; 
+    margin: 0 3px 0 4px; 
+    white-space: nowrap; 
+}
+
+.back-button {
+    padding: 10px 20px 10px 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: white;
+    cursor: pointer;
+    color: #677487;
+    font-size: 16px;
+    flex: 1; 
+    margin: 0px -10px; 
+    text-decoration: underline;
+}
+
+.progress-container {
+    margin: -40% -40% 0% 100% ;
+}
