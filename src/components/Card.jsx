@@ -18,12 +18,12 @@ const Card = ({ image, title, price, onClick, isTextOnly, isFavorite, onFavorite
                 </div>
             ) : (
                 <>
-                    {/* Favorite Icon inside card */}
+                   
                     <div
                         className="favorite-icon"
                         onClick={(e) => {
-                            e.stopPropagation(); // Prevent triggering the card click event
-                            onFavoriteToggle(); // Toggle the favorite state
+                            e.stopPropagation(); 
+                            onFavoriteToggle(); 
                         }}
                     >
                         {isFavorite ? <FavoriteIcon className="favorite" /> : <FavoriteBorderIcon className="favorite" />}

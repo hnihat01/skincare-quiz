@@ -1,27 +1,25 @@
-/* CardSlider.css */
 
-/* Card Styles */
 .card {
-    position: relative; /* Make card container a positioned element */
-    height: 500px; /* Fixed height for card */
-    width: 350px; /* Fixed width for card */
-    margin: 10px; /* Margin around the card */
+    position: relative; 
+    height: 500px; 
+    width: 350px; 
+    margin: 10px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border: 1px solid white; /* Optional: border for visibility */
-    border-radius: 8px; /* Optional: rounded corners */
-    overflow: hidden; /* Clip content if it overflows */
-    cursor: pointer; /* Change cursor on hover */
+    border: 1px solid white; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    cursor: pointer; 
     background-color: white;
 }
 
 .card img {
-    width: 290px; /* Fill the width of the card */
-    height: 300px; /* Fixed height for consistent sizing */
-    object-fit: cover; /* Maintain aspect ratio */
-    border-bottom: 3px solid rgba(128, 128, 128, 0.2); /* Light gray with 50% opacity */
+    width: 290px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-bottom: 3px solid rgba(128, 128, 128, 0.2); 
     border-radius: 8px;
 }
 
@@ -29,18 +27,18 @@
     font-family: 'Grange';
     color: rgba(28, 38, 53, 1);
     margin: 0;
-    font-size: 24px; /* Set the title font size */
-    padding: 5px 0; /* Padding around the title */
-    text-align: center; /* Center align title */
+    font-size: 24px; 
+    padding: 5px 0; 
+    text-align: center;
 }
 
 .card-price {
     font-family: 'Grange';
     color: rgba(28, 38, 53, 1);
-    font-size: 18px; /* Set the price font size */
-    color: #000; /* Color for the price */
-    padding: 5px 0; /* Padding around the price */
-    text-align: center; /* Center align price */
+    font-size: 18px; 
+    color: #000; 
+    padding: 5px 0;
+    text-align: center; 
 }
 
 /* Slider Styles */
@@ -59,7 +57,7 @@
     color: rgba(28, 38, 53, 1);
     background-color: rgba(238, 247, 251, 1);
     border: 0.16px solid rgba(238, 247, 251, 1);
-    outline: none; /* Removes the default focus outline */
+    outline: none; 
     cursor: pointer;
     font-size: 32px;
 }
@@ -74,23 +72,23 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgba(28, 38, 53, 0.5); /* Inactive dot color */
+    background-color: rgba(28, 38, 53, 0.5); 
     margin: 0 5px;
     cursor: pointer;
 }
 
 .active-dot {
-    background-color: rgba(28, 38, 53, 1); /* Active dot color */
+    background-color: rgba(28, 38, 53, 1); 
 }
 
 
 .text-only-container {
     background-color: rgba(238, 247, 251, 1);
-    font-size: 20.4px; /* Adjust as needed */
-    color: #1C2635; /* Change to your desired color */
-    padding: 16px; /* Reduce padding for better fit */
+    font-size: 20.4px; 
+    color: #1C2635; 
+    padding: 16px; 
     text-align: left;
-    padding: 40px 50px 2px 30px; /* Padding around the title */
+    padding: 40px 50px 2px 30px; 
     height: 100%;
 
 }
@@ -100,57 +98,57 @@
     font-weight: 600;
     color: rgba(28, 38, 53, 1);
     margin: 0;
-    font-size: 24px; /* Set the title font size */
-    padding: 5px 9px 5px 9px; /* Padding around the title */
-    text-align: center; /* Center align title */
+    font-size: 24px; 
+    padding: 5px 9px 5px 9px; 
+    text-align: center; 
 }
 .card-description {
-    font-family: 'Proxima Nova'; /* Change to your desired font */
+    font-family: 'Proxima Nova'; 
     font-weight: 400;
     color: rgba(28, 38, 53, 1);
     margin: 0;
-    font-size: 16px; /* Set the description font size */
-    text-align: left; /* Align description to the left */
-    width: 100%; /* Ensure it uses full width of the card */
-    /* Remove height if previously defined */
+    font-size: 16px; 
+    text-align: left; 
+    width: 100%; 
+    
 }
 
 
 /* Card Styles */
 .card {
-    height: 500px; /* Fixed height for card */
-    width: 350px; /* Fixed width for card */
-    margin: 10px; /* Margin around the card */
+    height: 500px; 
+    width: 350px; 
+    margin: 10px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border: 1px solid white; /* Optional: border for visibility */
-    border-radius: 8px; /* Optional: rounded corners */
-    overflow: hidden; /* Clip content if it overflows */
-    cursor: pointer; /* Change cursor on hover */
+    border: 1px solid white; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    cursor: pointer; 
     background-color: white;
 }
 
 /* Media Query for Small Screens */
 @media (max-width: 568px) {
     .card {
-        width: 90%; /* Take a larger width for smaller screens */
-        height: auto; /* Allow height to adjust based on content */
+        width: 90%;
+        height: auto; 
     }
 }
 .favorite-icon {
     position: absolute;
-    top: 10px; /* Adjust as needed to position inside the card */
-    right: 10px; /* Adjust as needed to position inside the card */
+    top: 10px; 
+    right: 10px; 
     cursor: pointer;
     color: rgba(28, 38, 53, 1);
     transition: color 0.3s ease;
-    z-index: 2; /* Ensure it appears above other elements */
+    z-index: 2; 
 }
 
 .favorite-icon .favorite {
-    color:rgba(28, 38, 53, 1); /* Color for the filled favorite icon */
+    color:rgba(28, 38, 53, 1); 
 }
 
 

@@ -6,19 +6,18 @@ import Typography from '@mui/material/Typography';
 function CircularProgressWithLabel(props) {
     const { currentQuestion, questionNumber, totalQuestions, label } = props;
 
-    // Set colors based on the question state
-    const progressColor = questionNumber <= currentQuestion ? '#EEF7FB' : '#AADDF3'; // Past: #AADDF3, Future: #EEF7FB
+    const progressColor = questionNumber <= currentQuestion ? '#EEF7FB' : '#AADDF3'; 
 
     return (
         <Box position="relative" display="inline-flex">
              <CircularProgress 
              variant='determinate'
-                size={80} // Adjust size if needed
-                value={(questionNumber / totalQuestions) * 100} // Progress value
+                size={80}
+                value={(questionNumber / totalQuestions) * 100} 
                 sx={{
-                    color: progressColor, // Soft background color
+                    color: progressColor, 
                     '& .MuiCircularProgress-circle': {
-                        stroke: '#AADDF3', // The stroke color based on current or future question
+                        stroke: '#AADDF3', 
                     },
                 }}
             />
@@ -38,8 +37,8 @@ function CircularProgressWithLabel(props) {
                     color="text.secondary"
                     style={{
                         fontFamily: 'Proxima Nova',
-                        fontSize: '20px', // Adjust font size
-                        color: '#1C2635', // Set desired label color
+                        fontSize: '20px', 
+                        color: '#1C2635', 
                     }}
                 >
                     {label}

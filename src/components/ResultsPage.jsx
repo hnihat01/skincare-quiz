@@ -4,10 +4,10 @@ import CardSlider from './CardSlider';
 import { useNavigate } from 'react-router-dom';
 
 const ResultsPage = () => {
-    const navigate = useNavigate(); // Initialize the navigate function
+    const navigate = useNavigate(); 
 
     const handleRetakeQuiz = () => {
-        navigate('/quiz/1'); // Navigate to the first quiz question
+        navigate('/quiz/1'); 
     };
 
     return (

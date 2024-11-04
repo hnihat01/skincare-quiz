@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import quizData from '../data/quizData'; // Adjust the import path accordingly
-import CircularWithValueLabel from './CircularProgressWithLabel'; // Import the circular progress bar component
+import quizData from '../data/quizData'; 
+import CircularWithValueLabel from './CircularProgressWithLabel'; 
 
 function QuestionPage() {
     const { questionIndex } = useParams();
@@ -8,12 +8,12 @@ function QuestionPage() {
     const currentQuestion = quizData[questionIndex];
 
     const handleAnswer = (answer) => {
-        // Handle answer logic here, such as saving it to state or context
+       
         console.log(`Question ${questionIndex}: ${answer}`);
         if (parseInt(questionIndex) < quizData.length - 1) {
             navigate(`/quiz/question/${parseInt(questionIndex) + 1}`);
         } else {
-            navigate('/quiz/results'); // Navigate to results or finish page
+            navigate('/quiz/results'); 
         }
     };
 

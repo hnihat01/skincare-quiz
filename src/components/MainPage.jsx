@@ -22,7 +22,7 @@ function MainPage() {
         left: '0px',
         top: '0px',
         background: 'rgba(0, 0, 0, 0.35)',
-        zIndex: 1, // Ensures overlay is on top of the image
+        zIndex: 1, 
     };
 
     const textContainer = {
@@ -34,7 +34,7 @@ function MainPage() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        zIndex: 2, // Ensures text is above the overlay
+        zIndex: 2, 
     };
 
     const firstText = {
@@ -43,7 +43,7 @@ function MainPage() {
         fontSize: '40px',
         textAlign: 'center',
         color: '#FFFFFF',
-        margin: '5% 2% 0% -25%', // Set margin to 0 to remove extra space
+        margin: '5% 2% 0% -25%', 
     };
 
     const secondText = {
@@ -52,7 +52,7 @@ function MainPage() {
         fontWeight: 100,
         textAlign: 'center',
         color: '#FFFFFF',
-        margin: '1% 2% 0% -25%', // Set margin to 0 to remove extra space
+        margin: '1% 2% 0% -25%', 
     };
 
     const buttonStyle = {
@@ -69,8 +69,8 @@ function MainPage() {
         fontSize: '14px',
         fontWeight: 500,
         textAlign: 'center',
-        cursor: 'pointer', // Change cursor to pointer on hover
-        margin: '2% 2% 3% -25%', // Set margin to 0 to remove extra space
+        cursor: 'pointer', 
+        margin: '2% 2% 3% -25%',
 
     };
     const clickedButton=()=>{

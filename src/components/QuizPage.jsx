@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import quizData from '../data/quizData';
 import CircularProgressWithLabel from './CircularProgressWithLabel';
-import '../styles/QuizPage.css'; // Import the CSS file
+import '../styles/QuizPage.css'; 
 
 function QuizPage() {
     const navigate = useNavigate();
@@ -69,13 +69,13 @@ function QuizPage() {
                         {questionIndex === totalQuestions - 1 ? "Discover your results" : "Next question→"}
                     </button>
                 </div>
-                {/* Move the progress bar here, below the question and answers */}
+              
                 <div className="progress-container">
                     <CircularProgressWithLabel  
-                        currentQuestion={questionIndex} // The index of the current question
-                        questionNumber={questionIndex + 1} // The index of the question being rendered
-                        totalQuestions={totalQuestions} // Total number of questions
-                        label={`${questionIndex + 1}/${totalQuestions}`} // Label for the progress circle
+                        currentQuestion={questionIndex} 
+                        questionNumber={questionIndex + 1} 
+                        totalQuestions={totalQuestions} 
+                        label={`${questionIndex + 1}/${totalQuestions}`} 
                     />
                 </div>
             </div>
