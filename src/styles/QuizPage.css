@@ -26,7 +26,7 @@
 .answer-container {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Center items when wrapping */
+    justify-content: center; 
     margin: 20px 0px 10px 40px;
     list-style-type: none;
     padding: 0;
@@ -35,7 +35,7 @@
 }
 
 .answer-style {
-    display: inline-block; /* Allows the width to adjust to text */
+    display: inline-block; 
     font-family: 'Proxima Nova';
     font-size: 16px;
     font-weight: 200;
